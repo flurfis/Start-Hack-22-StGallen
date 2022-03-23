@@ -2,19 +2,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/pycharm,pycharm+all,pycharm+iml,database,data,jetbrains,jetbrains+iml,jetbrains+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=pycharm,pycharm+all,pycharm+iml,database,data,jetbrains,jetbrains+iml,jetbrains+all
 
-### Data ###
-*.csv
-*.dat
-*.efx
-*.gbr
-*.key
-*.pps
-*.ppt
-*.pptx
-*.sdf
-*.tax2010
-*.vcf
-*.xml
 
 ### Database ###
 *.accdb
