@@ -17,7 +17,7 @@ class SingletonMeta(type):
 class Connection(metaclass=SingletonMeta):
 
     def __init__(self, username: str, password: str, dbname: str):
-        self.server = SSHTunnelForwarder(('202.61.227.142', 22),
+        self.server = SSHTunnelForwarder(('IPADDR', 22),
                                     ssh_username=username,
                                     ssh_password=password,
                                     remote_bind_address=('localhost', 5432),
