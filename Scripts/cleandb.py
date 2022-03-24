@@ -56,7 +56,7 @@ with con.cursor() as get_entries:
     for entry in rows:
         startdate =  properdate_start(entry[1])
         end_date = properdate_end(entry[2])
-        new_entry = (entry[0], startdate, end_date , entry[3], month_difference(end_date, startdate), entry[4])
+        new_entry = (entry[0], startdate, end_date, entry[3], month_difference(end_date, startdate), entry[4])
         data.append(new_entry)
     execute_values(get_entries, 'INSERT INTO verlaufe_cleaned(id_foreign, start_date, end_date, produkt, '
                                 'zeitdifferenz, id) VALUES %s', data, page_size=1000)
